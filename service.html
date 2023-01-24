@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NekoPetshop</title>
+    <link rel="stylesheet" href="gaya.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo"><i class="fas fa-cat"></i>NekoPetshop</a>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="index.html">About</a>
+            <a href="index.html">Product</a>
+            <a href="index.html">Services</a>
+            <a href="index.html">Contact</a>
+        </nav>
+
+        <div class="fas fa-user" id="login-btn"></div>
+
+        <form action="" class="login-form">
+            <h3>Sign In</h3>
+            <input type="email" name="" placeholder="Enter Your Email" id="" class="box">
+            <input type="password" name="" placeholder="Enter Your Password" id="" class="box">
+            
+            <div class="remember">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me">Remember Me</label>
+            </div>
+            <input type="submit" value="Sign In" class="btn">
+            <div class="links">
+                <a href="#">Forget Password</a>
+                <a href="#">Sign Up</a>
+            </div>
+        </form>
+    </header>
+
+    <section class="productserv" id="productserv">
+        <FORM name="form" onsubmit="return validate()">
+            <TABLE>
+                <TR>
+                    <TH colspan="2">Book Your Service</TH>
+                </TR>
+                <TD>Name</TD>
+                <TD><INPUT type="text" name="usrname" placeholder="Enter Your Name" required></TD>
+                </TR>
+
+                <TR> 
+                    <TD> Date of Bookings</TD>
+                    <TD><INPUT type="date" id="bookingdate" required onchange="compareDate()"></TD>
+                </TR>
+                
+                <TR>
+                    <TD>Select The Services</TD>
+                    <TD>
+                        <INPUT type="Radio" name="RB" required onclick="check()">cat boarding</INPUT>
+                        <INPUT type="Radio" name="RB" required onclick="check()">spa & grooming</INPUT>
+                        <INPUT type="Radio" name="RB" required onclick="check()">health care</INPUT>
+                    </TD>
+                </TR>
+
+                <TR>
+                    <TD>Price </TD>
+                    <TD><INPUT type="text" name="price" disabled></TD>
+                </TR>
+
+                <TR>
+                    <TD>Number of Bookings</TD> 
+                    <TD><INPUT type="text" name="num" placeholder="Enter of Booking" required onchange="total()" onkeypress="checknum()"> </TD>
+                </TR>
+
+                <TR>
+                    <TD>Total Price</TD> 
+                    <TD><INPUT type="text" name="totalprice" disabled> </TD> 
+                </TR>
+
+                <TR>
+                    <TD><Input ID="submit" type="submit" class="btn" onclick="sub()"></Td>
+                    <TD><Input ID="reset" type="reset" class="btn"></TD>
+                </TR>
+
+            </TABLE>
+
+        </FORM>
+         </DIV>
+    </section>
+
+    <section class="footer">
+
+        <img src="images/top_wave.png" alt="">
+
+        <div class="credit"> copyrigth &copy;2022 NekoPetshop. Created by <span> Group 4 </span></div>
+   
+    </section>
+
+    <script src="script.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+</html>

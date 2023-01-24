@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NekoPetshop</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="gaya.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo"><i class="fas fa-cat"></i>NekoPetshop</a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#product">Product</a>
+            <a href="#service">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="fas fa-user" id="login-btn"></div>
+
+        <form action="" class="login-form">
+            <h3>Sign In</h3>
+            <input type="email" name="" placeholder="Enter Your Email" id="" class="box">
+            <input type="password" name="" placeholder="Enter Your Password" id="" class="box">
+            
+            <div class="remember">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me">Remember Me</label>
+            </div>
+            <input type="submit" value="Sign In" class="btn">
+            <div class="links">
+                <a href="#">Forget Password</a>
+                <a href="#">Sign Up</a>
+            </div>
+        </form>
+        
+    </header>
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3><span>Hello!</span> welcome to NekoPetshop.</h3>
+            <a href="#about" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="image">
+            <img src="images/rcproducts.png" alt="Food-product"> 
+        </div>
+        
+        <div class="content">
+            <h3><span>The Number One</span> distributor in Wakanda.</h3>
+            <p>NekoPetshop merupakan distributor pertama produk Royal Canin.</p>
+            <a href="#product" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <section class="product" id="product">
+        <h1 class="heading"> our <span> products </span> </h1>
+    
+        <div class="box-container">
+    
+            <div class="box">
+                <div class="image">
+                    <img src="images/dried.png" alt="pet-food">
+                </div>
+                <div class="content">
+                    <h3>dry food</h3>
+                    <a href="pro-dryfood.html" class="btn">Shop Now</a>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="image">
+                    <img src="images/wet.png" alt="pet-food">
+                </div>
+                <div class="content">
+                    <h3>wet food</h3>
+                    <a href="pro-wetfood.html" class="btn">Shop Now</a>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="image">
+                    <img src="images/vit.png" alt="pet-food">
+                </div>
+                <div class="content">
+                    <h3>Vitamin-Suplement</h3>
+                    <a href="pro-vitsuplement.html" class="btn">Shop Now</a>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="image">
+                    <img src="images/toy.png" alt="pet-food">
+                </div>
+                <div class="content">
+                    <h3>Accessories</h3>
+                    <a href="pro-accesories.html" class="btn">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="service">
+        <h1 class="heading"> our <span>services</span> </h1>
+        <div class="box-container">
+    
+            <div class="box">
+                <i class="fas fa-cat"></i>
+                <h3>cat boarding</h3>
+                <a href="service.html" class="btn">read more</a>
+            </div>
+    
+            <div class="box">
+                <i class="fas fa-bath"></i>
+                <h3>spa & grooming</h3>
+                <a href="service.html" class="btn">read more</a>
+            </div>
+    
+            <div class="box">
+                <i class="fas fa-heartbeat"></i>
+                <h3>health care</h3>
+                <a href="service.html" class="btn">read more</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <form name="form1">
+            <h3>contact us</h3>
+            <input type="text" name="usrname" placeholder="Enter your name" class="box" required>
+            <input type="email" name="email" placeholder="Enter your email" class="box" required>
+            <input type="number" name="num" placeholder="Enter your number" class="box" required>
+            <textarea type="text" name="pesan" placeholder="Enter your message" id="" cols="30" rows="10" required></textarea>
+            
+            <input type="submit" value="send message" class="btn" onclick="send()">
+        </form>
+    </section>
+
+    <section class="footer">
+
+        <img src="images/top_wave.png" alt="">
+    
+        <div class="share">
+            <a href="#" class="btn"> <i class="fab fa-facebook-f"></i> facebook </a>
+            <a href="#" class="btn"> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="#" class="btn"> <i class="fab fa-instagram"></i> instagram </a>
+        </div>
+
+        <div class="credit"> copyrigth &copy;2022 NekoPetshop. Created by <span> Group 4 </span></div>
+   
+    </section>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+</html>
